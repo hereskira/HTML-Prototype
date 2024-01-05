@@ -1,0 +1,151 @@
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    height: 1024px;
+    background: #FFF;
+    background-image: url('IMG_1815.JPG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: transitionIn 0.75s;
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 648px;
+    height: 729px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    background: #3B6064;
+}
+
+.logo-container{
+    align-items: center;
+    text-align: center;
+}
+
+.logo-container p{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin: 20px;
+    margin-bottom: 25px;
+}
+
+.logo-container svg{
+    width: 127px;
+    height: 83px;
+    padding-top: 50px;
+}
+
+.form-group{
+    width: 474px;
+    height: 86px;
+    border-radius: 25px;
+    border: 1px solid #000;
+    background: #E4E4E4;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form-group p {
+    margin-left: 20px;
+    color: #938F8F;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.form-group svg {
+    padding-left: 40px;
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.form-group input {
+    border: none;
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.fp{
+    margin-top: -15px;
+    margin-left: 15px;
+    margin-bottom: 40px;
+}
+
+.fpass{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.fpass:hover p {
+    color: #959e9e;
+}
+
+.button-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 466px;
+    height: 56px;
+    border-radius: 25px;
+    background: #55828B;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.button-group:hover {
+    background: #456976;
+}
+
+.button-group p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.or{
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-group svg.eyeicon{
+    margin-left: 70px;
+}
+
+input:focus::placeholder, input:hover::placeholder {
+    color: transparent;
+}
